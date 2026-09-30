@@ -1,5 +1,4 @@
 .team {
-  padding: 120px 0;
   background-color: #f4f4fd;
 }
 .team-title {
@@ -12,12 +11,31 @@
 }
 .team-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 }
 .team-item {
-  width: calc((100% - 24px * 3) / 4);
-
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),

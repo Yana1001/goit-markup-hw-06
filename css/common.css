@@ -52,18 +52,33 @@ img {
   margin: -1px;
 }
 .container {
-  width: 1158px;
+  min-width: 320px;
   margin: auto;
-  padding: 0 15px;
-  /*outline: 2px solid red;
-  outline-offset: -2px;*/
+  padding: 0 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    margin: auto;
+    padding: 0 15px;
+  }
+}
+.hide {
+  display: none !important;
 }
 .logo {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   padding: 24px 0;
-  /*margin-right: 72px;*/
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -71,9 +86,16 @@ img {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #2e2f42;
 }
 .accent {
   color: #4d5ae5;
 }
 section {
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  section {
+    padding: 120px;
+  }
 }
