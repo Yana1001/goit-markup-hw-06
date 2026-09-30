@@ -52,7 +52,7 @@ img {
   margin: -1px;
 }
 .container {
-  min-width: 320px;
+  width: 320px;
   margin: auto;
   padding: 0 16px;
 
@@ -61,12 +61,12 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    width: 1158px;
     margin: auto;
     padding: 0 15px;
   }
@@ -78,7 +78,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 24px 0;
+  padding: 16px 0;
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -87,6 +87,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    padding: 24px 0;
+  }
 }
 .accent {
   color: #4d5ae5;

@@ -26,16 +26,19 @@
     row-gap: 64px;
   }
 }
+
 @media only screen and (min-width: 1158px) {
   .team-list {
     flex-direction: row;
-    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
     gap: 24px;
   }
 }
 .team-item {
+  max-width: 264px;
+
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -43,6 +46,7 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
+
 .team-img {
   display: block;
   object-fit: cover;
