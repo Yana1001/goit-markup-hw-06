@@ -96,16 +96,16 @@
   color: #f4f4fd;
 }
 
-.mobile-burger-menu {
+.mobile-burger-btn {
   background-color: transparent;
 }
-@media only screen and (min-width: 768px) {
-  .mobile-burger-menu {
+.mobile-burger-btn-icon {
+  color: #2e2f42;
+}
+@media only screen and (min-width: 767.98px) {
+  .mobile-burger-btn {
     display: none;
   }
-}
-.mobile-burger-menu-icon {
-  color: #2e2f42;
 }
 .mobile-menu-btn {
   position: absolute;
